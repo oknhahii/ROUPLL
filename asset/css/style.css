@@ -1,0 +1,398 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+
+body {
+  font-family: Roboto, tahoma, sans-serif;
+  color: #111111;
+}
+a {
+  text-decoration: none;
+  color: #111111;
+}
+li {
+  list-style: none;
+}
+.flex {
+  display: flex;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+.inline-block * {
+  display: inline-block;
+}
+.has-two-col {
+  display: flex;
+  justify-content: space-between;
+}
+ul.inline-list li {
+  display: inline-block;
+}
+header {
+  background: #eaeafa url(../Background/Background.png) no-repeat ;
+  background-size: cover;
+  padding-top: 48px;
+  padding-bottom: 265px;
+}
+#top-bar {
+  line-height: 48px;
+  height: 48px;
+}
+#top-bar h1 a {
+  display: flex;
+  line-height: 48px;
+  height: 48px;
+  align-items: center;
+}
+header ul {
+  font-size: 0px;
+}
+header #menu li a {
+  font-size: 22px;
+  color: #111111;
+  line-height: 48px;
+  padding: 0px 17px;
+  border: 2px solid transparent;
+}
+header #menu li a:hover{
+  border: 2px solid #c04ae2;
+  border-radius: 7px;
+  background-image: linear-gradient(90deg,#f0c5f0,#dfdaec);
+}
+header button {
+  color: #111111;
+  font-size: 18px;
+  height: 48px;
+  padding: 0px 42px;
+  border: 2px solid #c04ae2;
+  border-radius: 7px;
+  background-color: transparent;
+  font-weight: bold;
+  margin: 0px 12px;
+}
+header button:hover{
+  background: linear-gradient(90deg,#f0c5f0,#dfdaec);
+  cursor: pointer;
+  /* color:#f3efef; */
+}
+header #socials li a{
+  padding: 0px 18px;
+}
+header #socials li a img{
+  border-bottom: 0px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+header #socials li a:hover img{
+  border-bottom: 8px solid transparent;
+  transition: border-bottom 0.1s linear;
+}
+
+
+/* hero */
+header #hero {
+  margin-top: 137px;
+}
+header #title-header {
+  width: 650px;
+  position: relative;
+}
+header #title-header h1 {
+  font-size: 90px;
+  line-height: 108px;
+}
+header #title-header h2 {
+  font-size: 30px;
+  line-height: 48px;
+  color: #5e5858;
+  font-weight: normal;
+  margin-top: 42px;
+  margin-bottom: 55px;
+}
+header #title-header a {
+  display: inline-block;
+  font-size: 24px;
+  height: 74px;
+  line-height: 74px;
+  padding: 0px 70px;
+  border-radius: 7px;
+  background-color: #c04ae2;
+  box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.08);
+  color: #ffffff;
+}
+header #title-header a:hover{
+  background-color: #9b28bc;
+   /* background: linear-gradient(90deg,#67B26F,#4ca2cd); */
+}
+header #img-header {
+  position: absolute;
+}
+#main {
+  background: #fefbfd url(../background_content.png) no-repeat right top;
+  background-size: cover;
+  padding-top: 192px;
+  margin-left: -60px;
+}
+.feature #feature-title {
+  font-size: 24px;
+  color: #c04ae2;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.feature h2 {
+  line-height: 90px;
+  font-size: 60px;
+  width: 770px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 31px;
+  margin-bottom: 107px;
+}
+#features {
+  justify-content: space-between;
+  padding-bottom: 96px;
+}
+#features> div {
+  width: 370px;
+  border-width: 6px;
+  border-style: solid;
+  border-radius: 10px;
+  padding-left: 44px;
+  padding-right: 44px;
+  padding-top: 223px;
+  padding-bottom: 84px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  transition: margin-bottom,margin-top 0.3s ease;
+}
+#features div:hover{
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+  background-color: rgba(255, 0, 0, 0.03);
+  /* background-image: linear-gradient(270deg,#8de9d5,#32c4c0);*/
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+#features div h3 {
+  font-size: 30px;
+  line-height: 42px;
+}
+#features div p {
+  font-size: 20px;
+  line-height: 28px;
+  color: #5e5858;
+  margin-top: 21px;
+}
+#features div:first-child {
+  border-color: #fcd7df;
+  background-image: url(../mo_leo.png);
+  background-repeat: no-repeat;
+  background-position: left 138px top 88px;
+}
+#features div:nth-child(2) {
+  border-color: #c9f3e2;
+  background-image: url(../page.png);
+  background-repeat: no-repeat;
+  background-position: left 138px top 88px;
+}
+#features div:last-child {
+  border-color: #f2d5ba;
+  background-image: url(../user.png);
+  background-repeat: no-repeat;
+  background-position: left 138px top 88px;
+}
+/* team */
+#team {
+  padding-top: 84px;
+}
+#team #team-info {
+  width: 470px;
+}
+#team #team-info h2 {
+  color: #222222;
+  font-size: 60px;
+  line-height: 72px;
+  margin:24px 0;
+}
+#team #team-img {/*blck nay nho hon anh vi vay overflow say ra */
+  width: 550px;
+}
+#team #team-info p:nth-child(2) {
+  /*The con thu may*/
+  font-size: 24px;
+  line-height: 36px;
+  color: #5e5858;
+}
+#team #team-info p:nth-child(3) {
+  font-size: 20px;
+  line-height: 32px;
+  color: #5e5858;
+  margin-top: 28px;
+}
+#team #team-info a{
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  padding: 0px 48px;
+  border: 1px solid #ffffff;
+  border-radius: 7px;
+  background-color: #c04ae2;
+  color: #ffffff;
+  margin: 46px 0px;
+  box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.08);
+  /* transition:  1s ease-in-out; */
+}
+#team #team-info a:hover{
+  background-image: linear-gradient(270deg,#696eff,#f8acff);
+   /* transition: background-image 1s ease-in-out; */
+}
+/* Solve */
+#main #solve {
+  text-align: right;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#main #solve h3{
+  padding-bottom: 18px;
+  font-size: 24px;
+  line-height: 72px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color:#c04ae2;
+}
+#main #solve h2{
+  width: 720px;
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 500;
+  padding-bottom: 120px;
+}
+
+/* services */
+#main #services{
+  position: relative;
+  height: 1360px;
+}
+#main #services div{
+  width: 370px;
+  padding:200px 42px 72px 42px;
+  box-shadow: 0px 24px 72px rgba(7, 28, 75, 0.1);
+  border:5px solid rgb(186, 186, 248);
+  border-radius: 25px;
+  position: absolute;
+  background-color: rgba(247, 182, 207, 0.3);
+  transition: background-color,border-color,box-shadow 0.6s linear ;
+}
+
+#main #services div:hover{
+  box-shadow: 0px 32px 72px rgba(7, 28, 75, 0.9);
+  background-color: rgba(223, 159, 183, 0.3);
+  border: 5px solid rgb(163, 202, 241);
+  transition: background-color,border-color,box-shadow 0.3s ease-in-out ;
+}
+
+#main #services h3{
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+}
+#main #services p{
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+#main #services a{
+  display: block;/*Phai display cai nay ra*/
+  width: 52px;
+  height: 22px;
+  background:transparent url(../service/arrow.png) no-repeat left top;
+  background-size: contain;
+  margin: 0px auto;
+  text-indent: -1000000000px;
+  transition: background-position 0.3s ease-in-out;
+}
+#main #services a:hover{
+  background-position: right top;
+}
+#main #services div:first-child{
+  background-image:  url(../service/automation.png);
+  background-repeat:  no-repeat;
+  background-position:  center top 76px;
+  background-size: 84px;
+  left:0px;
+  right:0px;
+}
+#main #services div:nth-child(2){
+ background-image:  url(../service/gio.png);
+  background-repeat:  no-repeat;
+  background-position:  center top 76px; 
+  background-size: 84px;
+  left:400px;
+  top:87px;
+}
+#main #services div:nth-child(3){
+background-image:  url(../service/camera.png);
+  background-repeat:  no-repeat;
+  background-position:  center top 76px;
+  background-size: 84px;
+  left:800px;
+  top:182px;
+}
+#main #services div:nth-child(4){
+background-image:  url(../service/headphone.png);
+  background-repeat:  no-repeat;
+  background-position:  center top 76px;
+  background-size: 84px;
+  left:0px;
+  top:535px;
+  
+}
+#main #services div:nth-child(5){
+  background-image:  url(../service/location.png);
+  background-repeat:  no-repeat;
+  background-position:  center top 76px;
+  background-size: 84px;
+  left:400px;
+  top:620px;
+}
+#main #services div:last-child{
+  background-image:  url(../service/upload.png);
+  background-repeat:  no-repeat;
+  background-position:  center top 76px;
+  background-size: 84px;
+  left:800px;
+  top:672px;
+}
+
+
+
+
+
